@@ -1,0 +1,407 @@
+<Widget>[
+        Container(
+          child: Card(
+            color: Colors.lightBlue,
+            margin: EdgeInsets.all(20),
+            shadowColor: Colors.black,
+            elevation: 1.0,
+            child: ListTile(
+              //İlk iconun içeriği
+              leading: CircleAvatar(
+                child: Icon(Icons.android),
+                radius: 12,
+              ),
+              title: Text(
+                "Listview Elemanları ",
+                style: TextStyle(color: Colors.white),
+              ),
+              subtitle: Text("Listview Subtitle"),
+              trailing: Icon(Icons.add_circle),
+            ),
+          ),
+        ),
+        Divider(
+          color: Colors.black,
+          height: 5,
+          indent: 20,
+          endIndent: 20,
+        ),
+        Container(
+          child: Card(
+            color: Colors.lightBlue,
+            margin: EdgeInsets.all(20),
+            shadowColor: Colors.black,
+            elevation: 1.0,
+            child: ListTile(
+              //İlk iconun içeriği
+              leading: CircleAvatar(
+                child: Icon(Icons.android),
+                radius: 12,
+              ),
+              title: Text(
+                "Listview Elemanları ",
+                style: TextStyle(color: Colors.white),
+              ),
+              subtitle: Text("Listview Subtitle"),
+              trailing: Icon(Icons.add_circle),
+            ),
+          ),
+        ),
+        Divider(
+          color: Colors.black,
+          height: 5,
+          indent: 20,
+          endIndent: 20,
+        ),
+        Container(
+          child: Card(
+            color: Colors.lightBlue,
+            margin: EdgeInsets.all(20),
+            shadowColor: Colors.black,
+            elevation: 1.0,
+            child: ListTile(
+              //İlk iconun içeriği
+              leading: CircleAvatar(
+                child: Icon(Icons.android),
+                radius: 12,
+              ),
+              title: Text(
+                "Listview Elemanları ",
+                style: TextStyle(color: Colors.white),
+              ),
+              subtitle: Text("Listview Subtitle"),
+              trailing: Icon(Icons.add_circle),
+            ),
+          ),
+        ),
+        Divider(
+          color: Colors.black,
+          height: 5,
+          indent: 20,
+          endIndent: 20,
+        ),
+        Container(
+          child: Card(
+            color: Colors.lightBlue,
+            margin: EdgeInsets.all(20),
+            shadowColor: Colors.black,
+            elevation: 1.0,
+            child: ListTile(
+              //İlk iconun içeriği
+              leading: CircleAvatar(
+                child: Icon(Icons.android),
+                radius: 12,
+              ),
+              title: Text(
+                "Listview Elemanları ",
+                style: TextStyle(color: Colors.white),
+              ),
+              subtitle: Text("Listview Subtitle"),
+              trailing: Icon(Icons.add_circle),
+            ),
+          ),
+        ),
+        Divider(
+          color: Colors.black,
+          height: 5,
+          indent: 20,
+          endIndent: 20,
+        ),
+        Container(
+          child: Card(
+            color: Colors.lightBlue,
+            margin: EdgeInsets.all(20),
+            shadowColor: Colors.black,
+            elevation: 1.0,
+            child: ListTile(
+              //İlk iconun içeriği
+              leading: CircleAvatar(
+                child: Icon(Icons.android),
+                radius: 12,
+              ),
+              title: Text(
+                "Listview Elemanları ",
+                style: TextStyle(color: Colors.white),
+              ),
+              subtitle: Text("Listview Subtitle"),
+              trailing: Icon(Icons.add_circle),
+            ),
+          ),
+        ),
+        Divider(
+          color: Colors.black,
+          height: 5,
+          indent: 20,
+          endIndent: 20,
+        ),
+        Container(
+          child: Card(
+            color: Colors.lightBlue,
+            margin: EdgeInsets.all(20),
+            shadowColor: Colors.black,
+            elevation: 1.0,
+            child: ListTile(
+              //İlk iconun içeriği
+              leading: CircleAvatar(
+                child: Icon(Icons.android),
+                radius: 12,
+              ),
+              title: Text(
+                "Listview Elemanları ",
+                style: TextStyle(color: Colors.white),
+              ),
+              subtitle: Text("Listview Subtitle"),
+              trailing: Icon(Icons.add_circle),
+            ),
+          ),
+        ),
+        Divider(
+          color: Colors.black,
+          height: 5,
+          indent: 20,
+          endIndent: 20,
+        ),
+        Container(
+          child: Card(
+            color: Colors.lightBlue,
+            margin: EdgeInsets.all(20),
+            shadowColor: Colors.black,
+            elevation: 1.0,
+            child: ListTile(
+              //İlk iconun içeriği
+              leading: CircleAvatar(
+                child: Icon(Icons.android),
+                radius: 12,
+              ),
+              title: Text(
+                "Listview Elemanları ",
+                style: TextStyle(color: Colors.white),
+              ),
+              subtitle: Text("Listview Subtitle"),
+              trailing: Icon(Icons.add_circle),
+            ),
+          ),
+        ),
+        Divider(
+          color: Colors.black,
+          height: 5,
+          indent: 20,
+          endIndent: 20,
+        ),
+        Container(
+          child: Card(
+            color: Colors.lightBlue,
+            margin: EdgeInsets.all(20),
+            shadowColor: Colors.black,
+            elevation: 1.0,
+            child: ListTile(
+              //İlk iconun içeriği
+              leading: CircleAvatar(
+                child: Icon(Icons.android),
+                radius: 12,
+              ),
+              title: Text(
+                "Listview Elemanları ",
+                style: TextStyle(color: Colors.white),
+              ),
+              subtitle: Text("Listview Subtitle"),
+              trailing: Icon(Icons.add_circle),
+            ),
+          ),
+        ),
+        Divider(
+          color: Colors.black,
+          height: 5,
+          indent: 20,
+          endIndent: 20,
+        ),
+        Container(
+          child: Card(
+            color: Colors.lightBlue,
+            margin: EdgeInsets.all(20),
+            shadowColor: Colors.black,
+            elevation: 1.0,
+            child: ListTile(
+              //İlk iconun içeriği
+              leading: CircleAvatar(
+                child: Icon(Icons.android),
+                radius: 12,
+              ),
+              title: Text(
+                "Listview Elemanları ",
+                style: TextStyle(color: Colors.white),
+              ),
+              subtitle: Text("Listview Subtitle"),
+              trailing: Icon(Icons.add_circle),
+            ),
+          ),
+        ),
+        Divider(
+          color: Colors.black,
+          height: 5,
+          indent: 20,
+          endIndent: 20,
+        ),
+        Container(
+          child: Card(
+            color: Colors.lightBlue,
+            margin: EdgeInsets.all(20),
+            shadowColor: Colors.black,
+            elevation: 1.0,
+            child: ListTile(
+              //İlk iconun içeriği
+              leading: CircleAvatar(
+                child: Icon(Icons.android),
+                radius: 12,
+              ),
+              title: Text(
+                "Listview Elemanları ",
+                style: TextStyle(color: Colors.white),
+              ),
+              subtitle: Text("Listview Subtitle"),
+              trailing: Icon(Icons.add_circle),
+            ),
+          ),
+        ),
+        Divider(
+          color: Colors.black,
+          height: 5,
+          indent: 20,
+          endIndent: 20,
+        ),
+        Container(
+          child: Card(
+            color: Colors.lightBlue,
+            margin: EdgeInsets.all(20),
+            shadowColor: Colors.black,
+            elevation: 1.0,
+            child: ListTile(
+              //İlk iconun içeriği
+              leading: CircleAvatar(
+                child: Icon(Icons.android),
+                radius: 12,
+              ),
+              title: Text(
+                "Listview Elemanları ",
+                style: TextStyle(color: Colors.white),
+              ),
+              subtitle: Text("Listview Subtitle"),
+              trailing: Icon(Icons.add_circle),
+            ),
+          ),
+        ),
+        Divider(
+          color: Colors.black,
+          height: 5,
+          indent: 20,
+          endIndent: 20,
+        ),
+        Container(
+          child: Card(
+            color: Colors.lightBlue,
+            margin: EdgeInsets.all(20),
+            shadowColor: Colors.black,
+            elevation: 1.0,
+            child: ListTile(
+              //İlk iconun içeriği
+              leading: CircleAvatar(
+                child: Icon(Icons.android),
+                radius: 12,
+              ),
+              title: Text(
+                "Listview Elemanları ",
+                style: TextStyle(color: Colors.white),
+              ),
+              subtitle: Text("Listview Subtitle"),
+              trailing: Icon(Icons.add_circle),
+            ),
+          ),
+        ),
+        Divider(
+          color: Colors.black,
+          height: 5,
+          indent: 20,
+          endIndent: 20,
+        ),
+        Container(
+          child: Card(
+            color: Colors.lightBlue,
+            margin: EdgeInsets.all(20),
+            shadowColor: Colors.black,
+            elevation: 1.0,
+            child: ListTile(
+              //İlk iconun içeriği
+              leading: CircleAvatar(
+                child: Icon(Icons.android),
+                radius: 12,
+              ),
+              title: Text(
+                "Listview Elemanları ",
+                style: TextStyle(color: Colors.white),
+              ),
+              subtitle: Text("Listview Subtitle"),
+              trailing: Icon(Icons.add_circle),
+            ),
+          ),
+        ),
+        Divider(
+          color: Colors.black,
+          height: 5,
+          indent: 20,
+          endIndent: 20,
+        ),
+        Container(
+          child: Card(
+            color: Colors.lightBlue,
+            margin: EdgeInsets.all(20),
+            shadowColor: Colors.black,
+            elevation: 1.0,
+            child: ListTile(
+              //İlk iconun içeriği
+              leading: CircleAvatar(
+                child: Icon(Icons.android),
+                radius: 12,
+              ),
+              title: Text(
+                "Listview Elemanları ",
+                style: TextStyle(color: Colors.white),
+              ),
+              subtitle: Text("Listview Subtitle"),
+              trailing: Icon(Icons.add_circle),
+            ),
+          ),
+        ),
+        Divider(
+          color: Colors.black,
+          height: 5,
+          indent: 20,
+          endIndent: 20,
+        ),
+        Container(
+          child: Card(
+            color: Colors.lightBlue,
+            margin: EdgeInsets.all(20),
+            shadowColor: Colors.black,
+            elevation: 1.0,
+            child: ListTile(
+              //İlk iconun içeriği
+              leading: CircleAvatar(
+                child: Icon(Icons.android),
+                radius: 12,
+              ),
+              title: Text(
+                "Listview Elemanları ",
+                style: TextStyle(color: Colors.white),
+              ),
+              subtitle: Text("Listview Subtitle"),
+              trailing: Icon(Icons.add_circle),
+            ),
+          ),
+        ),
+        Divider(
+          color: Colors.black,
+          height: 5,
+          indent: 20,
+          endIndent: 20,
+        ),
+      ],
