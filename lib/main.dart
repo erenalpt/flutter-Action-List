@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:listeler/ui/action_list.dart';
+import 'package:listeler/ui/gridclass.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -16,6 +17,6 @@ void main() {
             ),
           ),
         ),
-        body: ActionList()),
+        body: GridClassOrnek()),
   ));
 }
