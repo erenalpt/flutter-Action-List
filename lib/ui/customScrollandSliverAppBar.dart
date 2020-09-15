@@ -14,6 +14,7 @@ class ScrollAndSliver extends StatelessWidget {
           shadowColor: Colors.black,
           floating: false,
           pinned: true, //Title text Scroll seen
+
           snap: false,
           flexibleSpace: FlexibleSpaceBar(
             title: Text(
