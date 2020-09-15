@@ -51,9 +51,7 @@ class GridClassOrnek extends StatelessWidget {
           ),
           onTap: () => debugPrint("OnTop $index click"),
           onDoubleTap: () => debugPrint("OnDoubleTop $index click"),
-          onLongPress: () => debugPrint("OnLongPress $index click"),
-          onLongPressStart: (details) =>
-              debugPrint("OnLongPress $index $details "),
+          onLongPress: () => debugPrint("onLongPress $index click"),
           onHorizontalDragStart: (details) =>
               debugPrint("onHorizontalDragStart $index $details"),
         );
