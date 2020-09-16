@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:math' as rnd;
 
 class ScrollAndSliver extends StatelessWidget {
   @override
@@ -18,7 +19,7 @@ class ScrollAndSliver extends StatelessWidget {
           snap: false,
           flexibleSpace: FlexibleSpaceBar(
             title: Text(
-              "Sliver Flexible Space",
+              "Sliver Flexible Space and Grid's",
               textAlign: TextAlign.center,
             ),
             centerTitle: true,
@@ -28,13 +29,59 @@ class ScrollAndSliver extends StatelessWidget {
             ),
           ),
         ),
-        SliverList(
+        SliverPadding(
+          padding: EdgeInsets.all(20),
+          sliver: SliverList(
+            delegate: SliverChildListDelegate(
+              constListElements(),
+            ),
+          ),
+        ),
+
+        SliverPadding(
+          padding: EdgeInsets.all(5),
+          sliver: SliverList(
+            delegate: SliverChildBuilderDelegate(_dynamicElementsCreate,
+                childCount: 20),
+          ),
+        ),
+
+        SliverFixedExtentList(
+            //SilverList bad performance. Fixed nice :)
+            delegate: SliverChildListDelegate(constListElements()),
+            itemExtent: 200),
+
+        SliverGrid(
           delegate: SliverChildListDelegate(
             constListElements(),
           ),
+          gridDelegate:
+              SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
         ),
-        //SliverFixedExtentList(delegate: null, itemExtent: null),
-        //SliverGrid(delegate: null, gridDelegate: null),
+        SliverGrid(
+          delegate:
+              SliverChildBuilderDelegate(_dynamicElementsCreate, childCount: 6),
+          gridDelegate:
+              SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+        ),
+
+        SliverGrid(
+          delegate:
+              SliverChildBuilderDelegate(_dynamicElementsCreate, childCount: 6),
+          gridDelegate:
+              SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 75),
+        ),
+
+        SliverGrid.count(
+          crossAxisCount: 4,
+          children: constListElements(),
+        ),
+
+        SliverFixedExtentList(
+            delegate: SliverChildBuilderDelegate(_dynamicElementsCreate,
+                childCount: 3),
+            itemExtent: 50)
+
         // SliverGrid.extent(maxCrossAxisExtent: 100),
         // SliverGrid.count(crossAxisCount: 3),
       ],
@@ -43,16 +90,6 @@ class ScrollAndSliver extends StatelessWidget {
 
   List<Widget> constListElements() {
     return [
-      Container(
-        height: 100,
-        child: Text(
-          "Sliver Child List Delegate 1",
-          style: TextStyle(fontSize: 14),
-          textAlign: TextAlign.center,
-        ),
-        color: Colors.amber,
-        alignment: Alignment.center,
-      ),
       Container(
         height: 100,
         child: Text(
@@ -134,5 +171,23 @@ class ScrollAndSliver extends StatelessWidget {
         alignment: Alignment.center,
       ),
     ];
+  }
+
+  Widget _dynamicElementsCreate(BuildContext context, int index) {
+    return Container(
+      height: 100,
+      child: Text(
+        "Sliver Dynamic Child List Delegate index: $index",
+        style: TextStyle(fontSize: 14),
+        textAlign: TextAlign.center,
+      ),
+      color: randomColorCreate(index),
+      alignment: Alignment.center,
+    );
+  }
+
+  Color randomColorCreate(int index) {
+    return Color.fromARGB(rnd.Random().nextInt(255), rnd.Random().nextInt(255),
+        rnd.Random().nextInt(255), rnd.Random().nextInt(255));
   }
 }
