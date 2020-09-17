@@ -9,44 +9,53 @@ class GridClassOrnek extends StatelessWidget {
     return GridView.builder(
       itemCount: 100,
       gridDelegate:
-          SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
+          SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
       itemBuilder: (BuildContext context, int index) {
-        return Container(
-          margin: EdgeInsets.all(5),
-          decoration: BoxDecoration(
-            // border: Border(
-            //   top: BorderSide(
-            //       color: Colors.red, width: 6, style: BorderStyle.solid),
-            // ),
-            border: Border.all(
-                color: Colors.red, width: 3, style: BorderStyle.solid),
-            boxShadow: [
-              BoxShadow(
-                  color: Colors.orangeAccent,
-                  offset: Offset(5, 5),
-                  blurRadius: 5)
-            ],
-            borderRadius:
-                BorderRadius.all(Radius.circular(index % 2 == 0 ? 50 : 5)),
-            color: Colors.red[100 * (index % 6)],
-            gradient: LinearGradient(
-                colors: [Colors.red, Colors.amber],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter),
-            image: DecorationImage(
-                image: AssetImage("assets/image/cats.png"),
-                fit: BoxFit.fill,
-                alignment: Alignment.center),
-          ),
-          alignment: Alignment.bottomCenter,
-          child: Padding(
-            padding: EdgeInsets.all(5),
-            child: Text(
-              "Hi, I'm CatsO",
-              textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.white, fontSize: 12),
+        return GestureDetector(
+          child: Container(
+            margin: EdgeInsets.all(5),
+            decoration: BoxDecoration(
+              // border: Border(
+              //   top: BorderSide(
+              //       color: Colors.red, width: 6, style: BorderStyle.solid),
+              // ),
+              border: Border.all(
+                  color: Colors.red, width: 2, style: BorderStyle.solid),
+              boxShadow: [
+                BoxShadow(
+                    color: Colors.orangeAccent,
+                    offset: Offset(5, 5),
+                    blurRadius: 5)
+              ],
+              borderRadius:
+                  BorderRadius.all(Radius.circular(index % 3 == 0 ? 50 : 5)),
+              color: Colors.red[100 * (index % 9)],
+              gradient: LinearGradient(
+                  colors: [Colors.red, Colors.amber],
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter),
+              image: DecorationImage(
+                  image: AssetImage("assets/image/cats.png"),
+                  fit: BoxFit.fill,
+                  alignment: Alignment.center),
+            ),
+            alignment: Alignment.bottomCenter,
+            child: Padding(
+              padding: EdgeInsets.all(5),
+              child: Text(
+                "Hi, I'm CatsO",
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.white, fontSize: 12),
+              ),
             ),
           ),
+          onTap: () => debugPrint("OnTop $index click"),
+          onDoubleTap: () => debugPrint("OnDoubleTop $index click"),
+          onLongPress: () => debugPrint("OnLongPress $index click"),
+          onLongPressStart: (details) =>
+              debugPrint("OnLongPress $index $details "),
+          onHorizontalDragStart: (details) =>
+              debugPrint("onHorizontalDragStart $index $details"),
         );
       },
     );
