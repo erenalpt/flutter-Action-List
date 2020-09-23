@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:listeler/ui/date_time.dart';
+import 'package:listeler/ui/other_list_elements.dart';
+import 'package:listeler/ui/stepper.dart';
+import 'package:listeler/ui/text_field_input_action.dart';
 //import 'package:listeler/ui/action_list.dart';
 //import 'package:listeler/ui/customScrollandSliverAppBar.dart';
 //import 'package:listeler/ui/gridclass.dart';
 import 'package:listeler/ui/navigators.dart';
+import 'package:listeler/ui/text_form_action.dart';
+
+import 'ui/navigators.dart';
 
 void main() {
   runApp(
@@ -21,6 +28,11 @@ void main() {
         '/PrsPage': (context) => PrsPage(),
         //'/TuvPage': (context) => TuvPage(),
         '/listpage': (context) => ListEvent(),
+        '/textfieldaction': (context) => TextFieldIslemleri(),
+        '/formandtextform': (context) => TextFormAction(),
+        '/otherformapp': (context) => OtherFormElements(),
+        '/datetimepick': (context) => DateTimePickers(),
+        '/stepperexam': (context) => StepperExam(),
       },
 
       onGenerateRoute: (settings) {

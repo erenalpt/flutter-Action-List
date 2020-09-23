@@ -13,84 +13,136 @@ class NavigatorExam extends StatelessWidget {
               color: Colors.red, fontSize: 14, fontStyle: FontStyle.italic),
         ),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            RaisedButton(
-              child: Text(
-                "Abc Page Raised Button",
-                textAlign: TextAlign.center,
+      body: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              RaisedButton(
+                child: Text(
+                  "Abc Page Raised Button",
+                  textAlign: TextAlign.center,
+                ),
+                color: Colors.cyan,
+                onPressed: () {
+                  Navigator.pushReplacementNamed(context, "/");
+                },
               ),
-              color: Colors.orange,
-              onPressed: () {
-                Navigator.pushReplacementNamed(context, "/");
-              },
-            ),
-            RaisedButton(
-              child: Text(
-                "Def Page Raised Button",
-                textAlign: TextAlign.center,
+              RaisedButton(
+                child: Text(
+                  "Def Page Raised Button",
+                  textAlign: TextAlign.center,
+                ),
+                color: Colors.amber,
+                onPressed: () {
+                  Navigator.pushReplacementNamed(context, "/DefPage");
+                },
               ),
-              color: Colors.orange,
-              onPressed: () {
-                Navigator.pushReplacementNamed(context, "/DefPage");
-              },
-            ),
-            RaisedButton(
-              child: Text(
-                "Ghi Page Raised Button",
-                textAlign: TextAlign.center,
+              RaisedButton(
+                child: Text(
+                  "Ghi Page Raised Button",
+                  textAlign: TextAlign.center,
+                ),
+                color: Colors.brown,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => GhiPage(),
+                    ),
+                  );
+                },
               ),
-              color: Colors.orange,
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => GhiPage(),
-                  ),
-                );
-              },
-            ),
-            RaisedButton(
-              child: Text(
-                "Jkl Page Raised Button and Scrap Data",
-                textAlign: TextAlign.center,
+              RaisedButton(
+                child: Text(
+                  "Jkl Page Raised Button and Scrap Data",
+                  textAlign: TextAlign.center,
+                ),
+                color: Colors.yellow,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => JklPage(),
+                    ),
+                  ).then((value) {
+                    debugPrint("Pop Event $value");
+                  });
+                },
               ),
-              color: Colors.orange,
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => JklPage(),
-                  ),
-                ).then((value) {
-                  debugPrint("Pop Event $value");
-                });
-              },
-            ),
-            RaisedButton(
-              child: Text(
-                "Mno Page Raised Button and Not Back",
-                textAlign: TextAlign.center,
+              RaisedButton(
+                child: Text(
+                  "Mno Page Raised Button and Not Back",
+                  textAlign: TextAlign.center,
+                ),
+                color: Colors.lime,
+                onPressed: () {
+                  Navigator.pushNamed(context, "/PrsPage");
+                },
               ),
-              color: Colors.orange,
-              onPressed: () {
-                Navigator.pushNamed(context, "/PrsPage");
-              },
-            ),
-            RaisedButton(
-              child: Text(
-                "Go To List Event",
-                textAlign: TextAlign.center,
+              RaisedButton(
+                child: Text(
+                  "Go To List Event",
+                  textAlign: TextAlign.center,
+                ),
+                color: Colors.pink,
+                onPressed: () {
+                  Navigator.pushNamed(context, "/listpage");
+                },
               ),
-              color: Colors.orange,
-              onPressed: () {
-                Navigator.pushNamed(context, "/listpage");
-              },
-            ),
-          ],
+              RaisedButton(
+                child: Text(
+                  "Go To Text Field Action",
+                  textAlign: TextAlign.center,
+                ),
+                color: Colors.blue,
+                onPressed: () {
+                  Navigator.pushNamed(context, "/textfieldaction");
+                },
+              ),
+              RaisedButton(
+                child: Text(
+                  "Go To Text Form Action",
+                  textAlign: TextAlign.center,
+                ),
+                color: Colors.red,
+                onPressed: () {
+                  Navigator.pushNamed(context, "/formandtextform");
+                },
+              ),
+              RaisedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, "/otherformapp");
+                },
+                color: Colors.red.shade400,
+                child: Text(
+                  "Other Form Elements",
+                  textAlign: TextAlign.center,
+                ),
+              ),
+              RaisedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, "/datetimepick");
+                },
+                color: Colors.green.shade400,
+                child: Text(
+                  "Date Time Picker",
+                  textAlign: TextAlign.center,
+                ),
+              ),
+              RaisedButton(
+                onPressed: () => Navigator.pushNamed(context, "/stepperexam"),
+                color: Colors.blue.shade300,
+                textColor: Colors.white,
+                child: Text(
+                  "Stepper",
+                  style: TextStyle(fontSize: 14),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
